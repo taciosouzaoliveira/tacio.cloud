@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tácio Souza | Cloud Engineer e Consultor</title>
+<meta name="description" content="Tácio Souza, Cloud Engineer em Aracaju/SE. Linux, Kubernetes, Terraform e automação. Fundador da Kurumin Tecnologia.">
+<meta property="og:title" content="Tácio Souza | Cloud Engineer e Consultor">
+<meta property="og:description" content="Linux, Kubernetes, Terraform e automação. Fundador da Kurumin Tecnologia.">
+<meta property="og:image" content="https://tacio.cloud/img/tacio.jpg">
+<meta property="og:url" content="https://tacio.cloud/">
+<meta property="og:type" content="profile">
+<link rel="icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+:root{--bg:#0b0f17;--card:#161b22;--card2:#1c2230;--line:#30363d;--text:#c9d1d9;--muted:#8b949e;--blue:#58a6ff;--green:#3fb950;--amber:#d29922}
+@media (prefers-color-scheme:light){:root{--bg:#f6f8fa;--card:#fff;--card2:#f0f3f6;--line:#d0d7de;--text:#24292f;--muted:#57606a;--blue:#0969da;--green:#1a7f37;--amber:#9a6700}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--blue)}
+a:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:6px}
+main{max-width:720px;margin:0 auto;padding:3rem 1rem 4rem}
+h1,h2{font-family:"Ubuntu","Segoe UI",system-ui,sans-serif;font-weight:700}
+
+.hero{text-align:center}
+.avatar{width:144px;height:144px;border-radius:50%;object-fit:cover;border:3px solid var(--blue);box-shadow:0 0 0 6px color-mix(in srgb,var(--blue) 18%,transparent)}
+h1{font-size:clamp(2rem,6vw,2.6rem);margin:1rem 0 .25rem;letter-spacing:-.01em}
+.role{color:var(--blue);font-weight:600;margin:0}
+.loc{color:var(--muted);font-size:.95rem;margin:.25rem 0 1rem}
+.tagline{max-width:52ch;margin:0 auto 1.25rem;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;padding:0;margin:0;list-style:none}
+.chips li{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:.2rem .75rem;font-size:.85rem}
+.social{display:flex;gap:1.25rem;justify-content:center;margin-top:1.25rem;font-size:1.5rem}
+.social a{color:var(--muted);text-decoration:none;transition:color .2s}
+.social a:hover{color:var(--blue)}
+
+section{margin-top:2.75rem}
+h2{font-size:1.25rem;margin:0 0 1rem}
+
+.links{display:grid;gap:.75rem}
+.link{display:flex;align-items:center;gap:1rem;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1rem 1.25rem;text-decoration:none;color:var(--text);transition:border-color .2s,transform .2s}
+.link:hover{border-color:var(--blue);transform:translateY(-2px)}
+.link i.ico{font-size:1.4rem;width:2.5rem;height:2.5rem;display:grid;place-items:center;border-radius:10px;background:var(--card2);color:var(--blue);flex-shrink:0}
+.link.primary{border-left:3px solid var(--green)}
+.link.primary i.ico{color:var(--green)}
+.link strong{display:block}
+.link span{color:var(--muted);font-size:.9rem;display:block;line-height:1.4}
+.link .go{margin-left:auto;color:var(--muted)}
+
+.about p{margin:0 0 1rem}
+
+.certs{display:grid;grid-template-columns:auto 1fr;gap:1.25rem;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.25rem}
+.certs img{width:110px;height:110px;display:block}
+.certs ul{list-style:none;padding:0;margin:0;display:grid;gap:.4rem}
+.certs li{display:flex;gap:.6rem;align-items:baseline;font-size:.95rem}
+.certs li i{width:1rem;text-align:center}
+.ok{color:var(--green)}.wip{color:var(--amber)}.next{color:var(--muted)}
+.certs small{color:var(--muted)}
+
+.timeline{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}
+.timeline li{position:relative;padding:0 0 1.1rem 1.25rem}
+.timeline li::before{content:"";position:absolute;left:-7px;top:.45rem;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--blue)}
+.timeline strong{display:block}
+.timeline span{color:var(--muted);font-size:.9rem}
+
+footer{margin-top:3rem;padding-top:1.25rem;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem;text-align:center}
+@media (max-width:520px){.certs{grid-template-columns:1fr;justify-items:center}.certs ul{justify-self:stretch}}
+</style>
+</head>
+<body>
+<main>
+
+<header class="hero">
+  <img class="avatar" src="img/tacio.jpg" alt="Foto de Tácio Souza" width="144" height="144">
+  <h1>Tácio Souza</h1>
+  <p class="role">Cloud Engineer · Fundador da Kurumin Tecnologia</p>
+  <p class="loc"><i class="fas fa-location-dot"></i> Aracaju, SE · Brasil</p>
+  <p class="tagline">Infraestrutura Linux, Kubernetes e automação. Construo, documento e ensino a operar ambientes estáveis, do servidor ao cluster.</p>
+  <ul class="chips">
+    <li>Linux</li><li>Kubernetes</li><li>Terraform</li><li>Ansible</li><li>GitOps</li><li>Observabilidade</li>
+  </ul>
+  <nav class="social" aria-label="Redes">
+    <a href="https://linkedin.com/in/taciosouzaoliveira" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/taciosouzaoliveira" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.credly.com/badges/e733e9a9-3d30-453c-a079-51df2024a113" target="_blank" rel="noopener" aria-label="Credly"><i class="fas fa-award"></i></a>
+    <a href="mailto:contato@tacio.cloud" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
+  </nav>
+</header>
+
+<section aria-labelledby="h-links">
+  <h2 id="h-links">Por onde seguir</h2>
+  <div class="links">
+    <a class="link primary" href="https://engineer.tacio.cloud/consultoria/">
+      <i class="ico fas fa-briefcase"></i>
+      <div><strong>Kurumin Tecnologia</strong><span>Consultoria de infraestrutura, automação e cloud para empresas</span></div>
+      <i class="go fas fa-arrow-right"></i>
+    </a>
+    <a class="link" href="https://engineer.tacio.cloud/">
+      <i class="ico fas fa-server"></i>
+      <div><strong>Home Lab · engineer.tacio.cloud</strong><span>Cluster Kubernetes, automação e a jornada de certificações, documentados em público</span></div>
+      <i class="go fas fa-arrow-right"></i>
+    </a>
+    <a class="link" href="https://github.com/taciosouzaoliveira" target="_blank" rel="noopener">
+      <i class="ico fab fa-github"></i>
+      <div><strong>GitHub</strong><span>Repositórios, projetos e código</span></div>
+      <i class="go fas fa-arrow-up-right-from-square"></i>
+    </a>
+    <a class="link" href="https://wa.me/5579996441081?text=Ol%C3%A1%20T%C3%A1cio!%20Vim%20pelo%20tacio.cloud." target="_blank" rel="noopener">
+      <i class="ico fab fa-whatsapp"></i>
+      <div><strong>WhatsApp</strong><span>Fale comigo diretamente</span></div>
+      <i class="go fas fa-arrow-up-right-from-square"></i>
+    </a>
+  </div>
+</section>
+
+<section class="about" aria-labelledby="h-sobre">
+  <h2 id="h-sobre">Sobre</h2>
+  <p>Sou profissional de infraestrutura com base sólida em servidores Linux (Debian, Ubuntu, Red Hat, SUSE) e automação com Bash, Ansible e Terraform. Tenho a certificação LFCS da Linux Foundation e estou no Cloud Engineer IT Professional Program, rumo à CKA e ao Kubestronaut.</p>
+  <p>Mantenho um laboratório próprio com cluster Kubernetes multi-nó, GitOps e observabilidade, onde testo as mesmas práticas que aplico com clientes. Documentar é parte do trabalho, não um extra.</p>
+</section>
+
+<section aria-labelledby="h-cert">
+  <h2 id="h-cert">Certificações</h2>
+  <div class="certs">
+    <a href="https://www.credly.com/badges/e733e9a9-3d30-453c-a079-51df2024a113" target="_blank" rel="noopener" title="Verificar no Credly">
+      <img src="img/lfcs.png" alt="Badge LFCS: Linux Foundation Certified System Administrator" width="110" height="110">
+    </a>
+    <ul>
+      <li><i class="fas fa-circle-check ok"></i><span><strong>LFCS</strong> · Linux Foundation Certified System Administrator <small>· 2026 · <a href="https://www.credly.com/badges/e733e9a9-3d30-453c-a079-51df2024a113" target="_blank" rel="noopener">verificar no Credly</a></small></span></li>
+      <li><i class="fas fa-clock wip"></i><span><strong>Terraform Associate (004)</strong> <small>· em andamento</small></span></li>
+      <li><i class="fas fa-clock wip"></i><span><strong>CKA</strong> · Certified Kubernetes Administrator <small>· em andamento</small></span></li>
+      <li><i class="far fa-circle next"></i><span><strong>CKAD · CKS</strong> <small>· 2027</small></span></li>
+      <li><i class="fas fa-rocket next"></i><span><strong>Golden Kubestronaut</strong> <small>· meta 2028</small></span></li>
+    </ul>
+  </div>
+</section>
+
+<section aria-labelledby="h-traj">
+  <h2 id="h-traj">Trajetória</h2>
+  <ul class="timeline">
+    <li><strong>Fundador e consultor · Kurumin Tecnologia</strong><span>2026 – presente · Infraestrutura, automação e cloud</span></li>
+    <li><strong>Assistente de Pesquisa · Embrapa</strong><span>2009 – presente · Aracaju/SE · Documentação técnica e tratamento de dados</span></li>
+    <li><strong>Técnico de TI · Wine Tecnologia</strong><span>2022 · Remoto · Suporte de infraestrutura N2, RCA e SLAs</span></li>
+    <li><strong>Pós-graduação em Cloud Computing</strong><span>Faculdade do Leste Mineiro · 2024</span></li>
+    <li><strong>Pós-graduação em Redes de Computadores</strong><span>ESAB · 2015</span></li>
+    <li><strong>Graduação em Gestão da Tecnologia da Informação</strong><span>UNIP · 2012</span></li>
+  </ul>
+</section>
+
+<footer>© 2026 Tácio Souza · <a href="mailto:contato@tacio.cloud">contato@tacio.cloud</a></footer>
+</main>
+</body>
+</html>
