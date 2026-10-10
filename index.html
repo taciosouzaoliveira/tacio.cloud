@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tácio Souza | Cloud Engineer e Consultor</title>
-<meta name="description" content="Tácio Souza, Cloud Engineer em Aracaju/SE. Linux, Kubernetes, Terraform e automação. Kurumin Tecnologia.">
+<meta name="description" content="Tácio Souza, Cloud Engineer em Aracaju/SE. Linux, Kubernetes, automação e observabilidade. Kurumin Tecnologia.">
 <meta property="og:title" content="Tácio Souza | Cloud Engineer e Consultor">
-<meta property="og:description" content="Linux, Kubernetes, Terraform e automação. Kurumin Tecnologia.">
+<meta property="og:description" content="Linux, Kubernetes, automação e observabilidade. Kurumin Tecnologia: do servidor ao cluster.">
 <meta property="og:image" content="https://tacio.cloud/img/tacio.jpg">
 <meta property="og:url" content="https://tacio.cloud/">
 <meta property="og:type" content="profile">
@@ -14,26 +14,27 @@
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <style>
-:root{--bg:#0b0f17;--card:#161b22;--card2:#1c2230;--line:#30363d;--text:#c9d1d9;--muted:#8b949e;--blue:#58a6ff;--green:#3fb950;--amber:#d29922}
-@media (prefers-color-scheme:light){:root{--bg:#f6f8fa;--card:#fff;--card2:#f0f3f6;--line:#d0d7de;--text:#24292f;--muted:#57606a;--blue:#0969da;--green:#1a7f37;--amber:#9a6700}}
+:root{--bg:#050A1A;--card:#0b1730;--card2:#0e1d3b;--line:#1f3560;--text:#e8f0ff;--muted:#93abcc;--blue:#1EB8F0;--green:#2EE6A6;--amber:#F5B83D;color-scheme:dark}
+@media (prefers-color-scheme:light){:root{--bg:#f4f8ff;--card:#fff;--card2:#eef4fd;--line:#d3deef;--text:#0b1a33;--muted:#4a5d7a;--blue:#0a7fb3;--green:#0f8a63;--amber:#a86a00;color-scheme:light}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 "Sora",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background-image:radial-gradient(900px 420px at 50% -8%,color-mix(in srgb,var(--blue) 16%,transparent),transparent 70%)}
 a{color:var(--blue)}
 a:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:6px}
 main{max-width:720px;margin:0 auto;padding:3rem 1rem 4rem}
-h1,h2{font-family:"Ubuntu","Segoe UI",system-ui,sans-serif;font-weight:700}
+h1,h2{font-family:"Sora","Segoe UI",system-ui,sans-serif;font-weight:700}
 
 .hero{text-align:center}
 .avatar{width:144px;height:144px;border-radius:50%;object-fit:cover;border:3px solid var(--blue);box-shadow:0 0 0 6px color-mix(in srgb,var(--blue) 18%,transparent)}
 h1{font-size:clamp(2rem,6vw,2.6rem);margin:1rem 0 .25rem;letter-spacing:-.01em}
 .role{color:var(--blue);font-weight:600;margin:0}
+.role b{background:linear-gradient(90deg,var(--blue),var(--green));-webkit-background-clip:text;background-clip:text;color:transparent}
 .loc{color:var(--muted);font-size:.95rem;margin:.25rem 0 1rem}
 .tagline{max-width:52ch;margin:0 auto 1.25rem;color:var(--muted)}
 .chips{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;padding:0;margin:0;list-style:none}
-.chips li{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:.2rem .75rem;font-size:.85rem}
+.chips li{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:.2rem .75rem;font:.8rem "JetBrains Mono",ui-monospace,monospace}
 .social{display:flex;gap:1.25rem;justify-content:center;margin-top:1.25rem;font-size:1.5rem}
 .social a{color:var(--muted);text-decoration:none;transition:color .2s}
 .social a:hover{color:var(--blue)}
@@ -77,11 +78,11 @@ footer{margin-top:3rem;padding-top:1.25rem;border-top:1px solid var(--line);colo
 <header class="hero">
   <img class="avatar" src="img/tacio.jpg" alt="Foto de Tácio Souza" width="144" height="144">
   <h1>Tácio Souza</h1>
-  <p class="role">Cloud Engineer · Kurumin Tecnologia</p>
+  <p class="role">Cloud Engineer · <b>Kurumin Tecnologia</b></p>
   <p class="loc"><i class="fas fa-location-dot"></i> Aracaju, SE · Brasil</p>
   <p class="tagline">Infraestrutura Linux, Kubernetes e automação. Construo, documento e ensino a operar ambientes estáveis, do servidor ao cluster.</p>
   <ul class="chips">
-    <li>Linux</li><li>Kubernetes</li><li>Terraform</li><li>Ansible</li><li>GitOps</li><li>Observabilidade</li>
+    <li>Linux</li><li>Kubernetes</li><li>Docker</li><li>Ansible</li><li>GitOps</li><li>Observabilidade</li>
   </ul>
   <nav class="social" aria-label="Redes">
     <a href="https://linkedin.com/in/taciosouzaoliveira" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
@@ -104,12 +105,17 @@ footer{margin-top:3rem;padding-top:1.25rem;border-top:1px solid var(--line);colo
       <div><strong>Home Lab · engineer.tacio.cloud</strong><span>Cluster Kubernetes, automação e a jornada de certificações, documentados em público</span></div>
       <i class="go fas fa-arrow-right"></i>
     </a>
+    <a class="link" href="https://www.amazon.com.br/dp/B0HMJHMCK3" target="_blank" rel="noopener">
+      <i class="ico fas fa-book"></i>
+      <div><strong>Livro · Kubernetes do Zero à CKA</strong><span>Guia prático de estudo para a certificação CKA</span></div>
+      <i class="go fas fa-arrow-up-right-from-square"></i>
+    </a>
     <a class="link" href="https://github.com/taciosouzaoliveira" target="_blank" rel="noopener">
       <i class="ico fab fa-github"></i>
       <div><strong>GitHub</strong><span>Repositórios, projetos e código</span></div>
       <i class="go fas fa-arrow-up-right-from-square"></i>
     </a>
-    <a class="link" href="https://wa.me/5579996441081?text=Ol%C3%A1%20T%C3%A1cio!%20Vim%20pelo%20tacio.cloud." target="_blank" rel="noopener">
+    <a class="link" href="https://wa.me/kurumintecnologia?text=Ol%C3%A1%2C%20T%C3%A1cio!%20Vim%20pelo%20tacio.cloud." target="_blank" rel="noopener">
       <i class="ico fab fa-whatsapp"></i>
       <div><strong>WhatsApp</strong><span>Fale comigo diretamente</span></div>
       <i class="go fas fa-arrow-up-right-from-square"></i>
@@ -119,8 +125,8 @@ footer{margin-top:3rem;padding-top:1.25rem;border-top:1px solid var(--line);colo
 
 <section class="about" aria-labelledby="h-sobre">
   <h2 id="h-sobre">Sobre</h2>
-  <p>Sou profissional de infraestrutura com base sólida em servidores Linux (Debian, Ubuntu, Red Hat, SUSE) e automação com Bash, Ansible e Terraform. Tenho a certificação LFCS da Linux Foundation e estou no Cloud Engineer IT Professional Program, rumo à CKA e ao Kubestronaut.</p>
-  <p>Mantenho um laboratório próprio com cluster Kubernetes multi-nó, GitOps e observabilidade, onde testo as mesmas práticas que aplico com clientes. Documentar é parte do trabalho, não um extra.</p>
+  <p>Sou profissional de infraestrutura com base sólida em servidores Linux (Debian, Ubuntu, Red Hat, SUSE) e automação com Bash e Ansible. Tenho a certificação LFCS da Linux Foundation e três certificações Oracle Cloud (OCI), e estou no Cloud Engineer IT Professional Program, rumo à CKA e ao Kubestronaut.</p>
+  <p>Mantenho um laboratório próprio com cluster Kubernetes multi-nó, GitOps e observabilidade, onde testo as mesmas práticas que aplico com clientes. Na Kurumin, a própria plataforma roda com observabilidade, acesso Zero Trust e IA local. Documentar é parte do trabalho, não um extra.</p>
 </section>
 
 <section aria-labelledby="h-cert">
@@ -131,9 +137,9 @@ footer{margin-top:3rem;padding-top:1.25rem;border-top:1px solid var(--line);colo
     </a>
     <ul>
       <li><i class="fas fa-circle-check ok"></i><span><strong>LFCS</strong> · Linux Foundation Certified System Administrator <small>· 2026 · <a href="https://www.credly.com/badges/e733e9a9-3d30-453c-a079-51df2024a113" target="_blank" rel="noopener">conferir</a></small></span></li>
-      <li><i class="fas fa-clock wip"></i><span><strong>Terraform Associate (004)</strong> <small>· em andamento</small></span></li>
-      <li><i class="fas fa-clock wip"></i><span><strong>CKA</strong> · Certified Kubernetes Administrator <small>· em andamento</small></span></li>
-      <li><i class="far fa-circle next"></i><span><strong>CKAD · CKS · KCNA · KCSA · Kubestronaut</strong> <small>· 2027</small></span></li>
+      <li><i class="fas fa-circle-check ok"></i><span><strong>OCI</strong> · Oracle Cloud Infrastructure: Foundations, Architect e AI Foundations Associate <small>· conferir <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=65E5A1ABA6B66ACE85FC8A16E8BA6C182604B4210F4E44B1DF2383212F2C8FBD" target="_blank" rel="noopener">Foundations</a> · <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=5A20812A71C71FB7669CA4D49F182FF7C3E71D2281A77A5BCD8899620E916C9D" target="_blank" rel="noopener">Architect</a> · <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=C901BD9FB9EBBBE467EDDF1E9F0E38D7310084695C0C50536F9A9BBDE2AADF2F" target="_blank" rel="noopener">AI</a></small></span></li>
+      <li><i class="fas fa-clock wip"></i><span><strong>CKA</strong> · Certified Kubernetes Administrator <small>· prova em 01/11/2026</small></span></li>
+      <li><i class="far fa-circle next"></i><span><strong>KCNA · CKAD · KCSA · CKS → Kubestronaut</strong> <small>· KCNA até dez/2026 · demais em 2027</small></span></li>
       <li><i class="fas fa-rocket next"></i><span><strong>Golden Kubestronaut</strong> <small>· meta 2028</small></span></li>
     </ul>
   </div>
